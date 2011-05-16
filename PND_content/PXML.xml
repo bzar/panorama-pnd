@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PXML xmlns="http://openpandora.org/namespaces/PXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PXML_schema.xsd">
+<!-- please see http://pandorawiki.org/PXML_specification for more information before editing, and remember the order does matter -->
+
+  <application id="bzar-panorama" appdata="panorama">
+    <exec command="scripts/panorama.sh"/>
+    <title lang="en_US">Panorama</title>
+
+    <author name="bzar" website="https://github.com/bzar/panorama"/>
+    <version major="0" minor="0" release="3" build="0" type="alpha"/>	      <!--This programs version-->
+    <osversion major="1" minor="0" release="0" build="0"/>		<!--The minimum OS version required-->
+
+    <description lang="en_US">A user interface engine based on Qt Quick</description>
+
+    <!--<icon src="path/to/icon.pnd"/>-->
+
+<!--
+    <previewpics>
+      <pic src="previews/panorama.png"/>
+    </previewpics>
+-->
+
+    <!--<info name="panorama documentation" type="text/plain" src="/mnt/utmp/panorama/readme.txt"/>-->
+
+    <categories>
+      <!-- http://standards.freedesktop.org/menu-spec/latest/apa.html -->
+      <category name="Utility">
+	<subcategory name="Qt"/>
+      </category>
+    </categories>
+
+<!--
+    <associations>
+      <association name="Deinterlaced Bitmap Image" filetype="image/bmp" exec="-f %s"/>
+      <association name="Style sheet system crasher" filetype="text/css" exec="-f %s"/>
+    </associations>
+-->
+    <!--<clockspeed frequency="600"/>-->
+  </application>
+
+</PXML>

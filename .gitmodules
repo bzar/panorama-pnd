@@ -1,0 +1,3 @@
+[submodule "panorama"]
+	path = panorama
+	url = git://github.com/bzar/panorama.git
