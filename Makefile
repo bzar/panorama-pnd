@@ -13,8 +13,9 @@ build: prepare_build qmake
 
 prepare_pnd: build
 	for qtlib in $$(ls qt_4.7_arm/lib/*.so); do if [ ! -e PND_content/lib/$$(basename $$qtlib).4 ]; then cp -u $$qtlib PND_content/lib/$$(basename $$qtlib).4; fi; done
-	cp panorama/panorama/target/panorama PND_content/panorama
-	cp -Rf panorama/panorama/target/interfaces/* PND_content/interfaces_default/
+	cp panorama/target/panorama PND_content/panorama
+	cp -Rf panorama/target/interfaces/* PND_content/interfaces_default/
+	cp -Rf panorama/target/plugins/* PND_content/plugins/
 
 pnd: prepare_pnd
 	pnd_make -c -p panorama.pnd -d PND_content -i PND_content/icon.png -x PND_content/PXML.xml
@@ -29,6 +30,7 @@ clean_pnd:
 	rm -f PND_content/lib/*
 	rm -f PND_content/panorama
 	rm -Rf PND_content/interfaces_default/*
+	rm -Rf PND_content/plugins/*
 
 clean: clean_build clean_pnd
 
