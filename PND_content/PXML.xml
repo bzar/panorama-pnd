@@ -7,7 +7,7 @@
     <title lang="en_US">Panorama</title>
 
     <author name="bzar" website="https://github.com/bzar/panorama"/>
-    <version major="0" minor="1" release="268" build="0" type="release"/>	      <!--This programs version-->
+    <version major="0" minor="1" release="271" build="0" type="release"/>	      <!--This programs version-->
     <osversion major="1" minor="0" release="0" build="0"/>		<!--The minimum OS version required-->
 
     <description lang="en_US">A user interface engine based on Qt Quick</description>
